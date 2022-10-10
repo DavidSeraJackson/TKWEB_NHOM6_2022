@@ -83,3 +83,8 @@ setTimeout(() => {
 }, 8000)
 // x.style.opacity = "0";s
 
+
+
+
+//carousel
+$('.carousel').carousel();
