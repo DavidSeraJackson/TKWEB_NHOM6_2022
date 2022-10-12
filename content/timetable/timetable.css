@@ -118,231 +118,44 @@ nav > div > a:hover {
 /* NOI DUNG TRANG */
 /* ************************************************ */
 
-#content-homepage {
-  margin-top: 46px;
-  position: relative;
-}
-
-/* ****slider******** */
-
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
-.greeting {
-  background-color: #0040c1;
-  position: relative;
-  height: 500px;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  z-index: 0;
-}
-.greeting__title {
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 6vw ;
-  text-transform:uppercase;
-}
 
 
-/* ********Đồng hồ cập nhật trực tiếp******** */
-#digital-clock {
-  transition: 0.5s;
-  position: relative;
-  display: inline-block;
-  font-size: 20px;
-  line-height: 24px;
-  color: #fff;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 5vh;
-}
-
-.cta {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  background: none;
-  border: none;
-  padding: 12px 18px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 15vh;
-}
-.cta::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) translateX(calc(100% + 20px)) ;
-  width: 45px;
-  height: 45px;
-  background: #dc143c;
-  border-radius: 50px;
-  transition: tranform .25s .25s cubic-bezier(0,0,.5,2), width 0.25s cubic-bezier(0,0,.5,2);
-  z-index: -1;
-}
-.cta:hover::before {
+img {
+  height: 400px;
   width: 100%;
-  transform: translateY(-50%) translateX(-18px);
-  transition: transform .25s cubic-bezier(0,0,.5,2), width 0.25s 0.25s cubic-bezier(0,0,.5,2);
-}
-.cta i {
-  margin-left: 5px ;
-  transition: tranform 0.25s 0.4s cubic-bezier(0,0,.5,2);
-}
-.cta:hover i {
-  transform: translateX(3px);
-}
-
-.cube {
-  position: absolute;
-  top: 80vh;
-  left: 45vw;
-  width: 10px;
-  height: 10px;
-  border: solid 1px #003298;
-  transform-origin: top left;
-  transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  animation: cube 16s ease-in forwards infinite;
-}
-.cube:nth-child(2n) {
-  border-color: #0051f4;
-}
-.cube:nth-child(2) {
-  animation-delay: 2s;
-  left: 25vw;
-  top: 40vh;
-}
-.cube:nth-child(3) {
-  animation-delay: 4s;
-  left: 75vw;
-  top: 30vh;
-}
-.cube:nth-child(4) {
-  animation-delay: 6s;
-  left: 30vw;
-  top: 10vh;
-}
-.cube:nth-child(5) {
-  animation-delay: 8s;
-  left: 10vw;
-  top: 65vh;
-}
-.cube:nth-child(6) {
-  animation-delay: 10s;
-  left: 40vw;
-  top: 10vh;
-}
-.cube:nth-child(7) {
-  animation-delay: 12s;
-  left: 75vw;
-  top: 50vh;
-}
-.cube:nth-child(8) {
-  animation-delay: 14s;
-  left: 100vw;
-  top: 70vh;
-}
-.cube:nth-child(9) {
-  animation-delay: 16s;
-  left: 90vw;
-  top: 10vh;
-}
-@keyframes cube {
-  from {
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(20) rotate(960deg) translate(-50%, -50%);
-    opacity: 0;
-  }
-}
-
-/* galery-view */
-
-#galery-view {
-  margin-top: 46px;
-  background-color: #ddd;
-}
-.galery-wrapper .heading {
-  font-size: 64px;
-  font-weight: bold;
-}
-.galery-wrapper .sub-heading {
-  font-size: 14px;
-  font-style: italic;
-}
-.galery-wrapper .text-description {
-  font-size: 16px;
-}
-
-.galery-wrapper {
-  width: 100%;
-  margin: 20px auto;
-  padding: 20px;
-}
-.galery-wrapper .card {
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  height: calc(100% - 0px);
-  border: 1px solid #ddd;
-}
-.galery-wrapper .card img {
-  width: 100%;
-  height: 300px;
+  background-size: cover;
+  background-position: center;
   object-fit: cover;
-  object-position: 0 center;
-}
-.galery-wrapper .card h3 {
-  padding: 10px 0;
-  font-size: 25px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.galery-wrapper .card p {
-  color: #555;
-  font-size: 14px;
-}
-.galery-wrapper .card .card-footer {
-  background: transparent;
-  border: 0;
-  padding: 1rem;
-  padding-bottom: 2rem;
-}
-.galery-wrapper .card .btn {
-  padding: 10px 35px;
 }
 
-/* chan trang */
-.footer img {
-  width: 100%;
-}
-.footer footer ul li a {
-  margin-right: 30px;
-}
-.icon-footer {
-  width: 16px;
-  height: 16px;
-  color: #888;
-  color: rgba(0, 0, 0, 0.6);
-}
-.icon-footer:hover {
-  color: rgba(0, 0, 0, 0.3);
+/* table,
+td,
+th,
+td {
+  border: 2px solid rgb(70, 88, 159);
+  text-align: center;
+  margin: auto;
 }
 
-/* cotact content */
-.contact {
-  padding: 30px;
+table {
+  border-collapse: collapse;
 }
-.btn-submit {
-  margin-top: 20px;
+
+th {
+  padding: 30px 40px 40px 40px;
+  text-align: center;
 }
+
+tr:hover {
+  background-color: rgb(8, 137, 154);
+  cursor: pointer;
+}
+
+table tr:nth-child(1) {
+  background-color: rgb(24, 212, 27);
+} */
+
+
 
 
 /* cuon chuot */
