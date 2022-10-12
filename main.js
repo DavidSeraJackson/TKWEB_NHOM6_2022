@@ -58,7 +58,7 @@ function Time() {
     }
 
     // add time element
-    document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period;
+    document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period + "\n" + week + " " + date + " " + month + " " + year;
     // set timer to 1 sec 1000ms 
     setTimeout(Time,1000);
 }   
@@ -85,6 +85,3 @@ setTimeout(() => {
 
 
 
-
-//carousel
-$('.carousel').carousel();
